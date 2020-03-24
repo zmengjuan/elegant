@@ -3,17 +3,19 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Router from 'vue-router'
+import VueRouter from 'vue-router';
+// import Router from 'vue-router'
+import ViewUI from 'view-design';
+import 'view-design/dist/styles/iview.css';
 
 Vue.config.productionTip = false
 
-
+Vue.use(ViewUI,VueRouter);
 
 // 解决点击同一路由下报错问题
-const originalPush = Router.prototype.push
-Router.prototype.push = function push (location) {
-  return originalPush.call(this, location).catch(err => err)
-}
+
+
+
 
 /* eslint-disable no-new */
 new Vue({

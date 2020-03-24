@@ -1,41 +1,58 @@
 <template>
-<div class="contenter">
-   <div class="body_Total">
-        <Header class="el_header_sold"></Header>
-        <Asider class="el_asider_texture"></Asider>
+        <div class="Layout">
+    <div>
+        <HomeSider class="HomeSider" hide-trigger></HomeSider>
+        <div>
+            <HomeHeader class="HomeHeader"></HomeHeader>
+            <HomeContent class="HomeContent"></HomeContent>
+        </div>
     </div>
-</div>
+        </div>
 </template>
 
 <script>
-import Header from '../layout/header_top'
-import Asider from '../layout/body_asider'
+import HomeHeader from '../layout/header_top'
+import HomeSider from '../layout/body_asider'
+import HomeContent from '../layout/body_content'
 export default {
-    name:'Layout',
     components: {
-        Header,
-        Asider
+        HomeHeader,
+        HomeSider,
+        HomeContent
     }
 }
 </script>
 
 <style>
-.contenter{
-    margin:0;
-    padding:0;
-}
-.body_Total{
-    width:100%;
-    height:100%;
-}
-    .el_header_sold{
+    .Layout{
+        margin:0;
+        width:100%;
         height:100%;
-        background: #aaa;
-        width:80%;
     }
-    .el_asider_texture{
-        width:20%;
+    .HomeSider{
+        width:17%;
+        position: fixed;
+        top:0;
+        left:0;
+        bottom:0;
         height:100%;
-        background: #666;
+        background: #000;
+    }
+    .HomeHeader{
+        position:fixed;
+        top:0;
+        height:20%;
+        background:powderblue;
+        left:17%;
+        right:0;
+    }
+    .HomeContent{
+        position:fixed;
+        top:20%;
+        left:17%;
+        right:0;
+        bottom:0;
+        overflow: auto;
+        background:palegreen;
     }
 </style>
