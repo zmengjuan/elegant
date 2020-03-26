@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import routes from '../../router/index.js'
+import routes from '../../router/siderPath.js'
 export default {
   data(){
     return {

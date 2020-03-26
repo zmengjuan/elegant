@@ -16,7 +16,7 @@ export default [
            },
            {
              path:'/elandes',
-             name:'elamdes',
+             name:'elandes',
              meta: {
               title:'纪律设置'
             },

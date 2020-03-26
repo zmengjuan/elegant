@@ -18,7 +18,7 @@ export default {
     components: {
         HomeHeader,
         HomeSider,
-        HomeContent
+        HomeContent,
     }
 }
 </script>

@@ -4,7 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueRouter from 'vue-router';
-// import Router from 'vue-router'
 import ViewUI from 'view-design';
 import 'view-design/dist/styles/iview.css';
 
@@ -21,6 +20,7 @@ Vue.use(ViewUI,VueRouter);
 new Vue({
   el: '#app',
   router,
-  components: { App },
-  template: '<App/>'
+  // components: { App },
+  // template: '<App/>'
+  render: h => h(App)
 })
