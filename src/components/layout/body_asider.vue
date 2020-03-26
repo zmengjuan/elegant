@@ -2,36 +2,48 @@
   <div class="asider_body">
     <div class="Internet">网络服务平台</div>
       <ul class="asider_ul">
-          <li>
-            <h2>aa</h2>
+          <!-- <li v-for="(items, index) in router" :index='items.name' :key="index">
+            <h2>{{items.meta.name}}</h2>
             <ul class="list">
               <li v-for="item in listArr" :key="item.id" :value="item.id">{{item.name}}</li>
             </ul>
-          </li>
+          </li> -->
       </ul>
   </div>
 </template>
 
 <script>
-import router from '../../router/index'
+import routes from '../../router/index.js'
 export default {
   data(){
-    return{
-      listArr:[
-        {id:1,name:'a2'},
-        {id:2,name:'a3'},
-        {id:3,name:'a4'},
-        {id:4,name:'a5'},
-      ]
+    return {
+      // Routers: router,
+      // listArr:[
+      //   {id:1,name:'a2'},
+      //   {id:2,name:'a3'},
+      //   {id:3,name:'a4'},
+      //   {id:4,name:'a5'},
+      // ]
     }
   },
+    methods:{
+      arr(){
+      // for(let item in routes){
+      //   console.log(item.children)
+      // }
+      console.log(routes,'routes')
+      }
+    },
+    mounted(){
+      this.arr()
+    },
 
 }
 </script>
 
 <style>
 .asider_body{
-  width:17%;
+  width:13%;
   height:100%;
 }
 .Internet{

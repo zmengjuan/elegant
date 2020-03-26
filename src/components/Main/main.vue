@@ -30,7 +30,7 @@ export default {
         height:100%;
     }
     .HomeSider{
-        width:17%;
+        width:13%;
         position: fixed;
         top:0;
         left:0;
@@ -41,18 +41,16 @@ export default {
     .HomeHeader{
         position:fixed;
         top:0;
-        height:20%;
-        background:powderblue;
-        left:17%;
+        height:15%;
+        left:13%;
         right:0;
     }
     .HomeContent{
         position:fixed;
-        top:20%;
-        left:17%;
+        top:15%;
+        left:13%;
         right:0;
         bottom:0;
         overflow: auto;
-        background:palegreen;
     }
 </style>

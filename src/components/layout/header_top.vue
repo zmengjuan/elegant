@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="header_top">
     herder-top
   </div>
 </template>
@@ -18,5 +18,7 @@ export default {
 </script>
 
 <style>
-
+.header_top{
+  border-bottom:1px solid #e6e6e6;
+}
 </style>
