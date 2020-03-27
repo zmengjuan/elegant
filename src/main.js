@@ -14,13 +14,10 @@ Vue.use(ViewUI,VueRouter);
 // 解决点击同一路由下报错问题
 
 
-
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  // components: { App },
-  // template: '<App/>'
-  render: h => h(App)
+  components: { App },
+  template: '<App/>'
 })

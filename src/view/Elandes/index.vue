@@ -20,7 +20,7 @@ export default {
       }else if(this.c == false){
         this.codeText='登录'
       }
-    }
+    },
   },
 }
 </script>

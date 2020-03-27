@@ -1,6 +1,6 @@
 <template>
   <div>
-      body-content
+      <button>123</button>
   </div>
 </template>
 
