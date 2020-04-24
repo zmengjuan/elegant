@@ -1,18 +1,28 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import VueRouter from 'vue-router';
-import ViewUI from 'view-design';
-import 'view-design/dist/styles/iview.css';
+import ElementUI from 'element-ui'
+import Router from 'vue-router'
 
+import 'element-ui/lib/theme-chalk/index.css'
+import './assets/css/reset.css'
+import './assets/css/element-ui.css'
+
+import './utils/Axios'
+
+Vue.use(ElementUI)
 Vue.config.productionTip = false
 
-Vue.use(ViewUI,VueRouter);
+// 路由守卫
+router.beforeEach((to, from, next) => {
+  next()
+})
 
 // 解决点击同一路由下报错问题
-
+const originalPush = Router.prototype.push
+Router.prototype.push = function push (location) {
+  return originalPush.call(this, location).catch(err => err)
+}
 
 /* eslint-disable no-new */
 new Vue({
