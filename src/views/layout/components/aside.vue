@@ -34,7 +34,7 @@ export default {
   methods: {
     getPath () {
       let path = this.$route.path
-      console.log(path)
+      console.log(path,'path')
       this.asideActive = path
     }
   },

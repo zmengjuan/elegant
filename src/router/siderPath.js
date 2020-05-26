@@ -26,5 +26,19 @@ export default [
         component: () => import('@/views/logs/operation.vue')
       }
     ]
+  },
+  {
+    path: '/house',
+    name: '/house',
+    meta: { name: '房屋详情', icon: 'el-icon-help', auth: true },
+    component: Main,
+    children:[
+      {
+        path: '/baseList/houseAdd',
+        name: '/baseList/houseAdd',
+        meta: { name: '登录日志', auth: true },
+        component: () => import('@/views/baseList/houseAdd.vue')
+      },
+    ]
   }
 ]

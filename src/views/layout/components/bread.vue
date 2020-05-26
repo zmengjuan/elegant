@@ -16,7 +16,7 @@ export default {
     morenRouter () {
       // 将第一个排除，slice(start,end),end可选：slice() 方法可从已有的数组中返回选定的元素
       this.breadList = this.$route.matched.slice(1)
-      console.log(this.breadList)
+      console.log(this.breadList,'this.breadList')
     }
   },
   mounted () {
